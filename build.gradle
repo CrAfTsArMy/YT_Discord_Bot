@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'de.craftsblock'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven { url 'https://jitpack.io' }
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'net.dv8tion:JDA:5.0.0-alpha.21'
+    implementation 'com.github.CrAfTsArMy:CraftsCore:v3.4.8-SNAPSHOT'
+}
