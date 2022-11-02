@@ -40,9 +40,9 @@ public class VoiceListener extends ListenerAdapter {
             Category category = event.getNewValue().getParentCategory();
             VoiceChannel voiceChannel;
             if (category != null)
-                voiceChannel = category.createVoiceChannel("⏳ | " + member.getUser().getName()).complete();
+                voiceChannel = category.createVoiceChannel(" | " + member.getUser().getName()).complete();
             else
-                voiceChannel = guild.createVoiceChannel("⏳ | " + member.getUser().getName()).complete();
+                voiceChannel = guild.createVoiceChannel(" | " + member.getUser().getName()).complete();
             guild.moveVoiceMember(member, voiceChannel).queue();
             tempchannels.add(voiceChannel.getIdLong());
         }
