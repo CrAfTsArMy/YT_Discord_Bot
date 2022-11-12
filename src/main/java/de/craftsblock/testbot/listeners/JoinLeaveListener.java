@@ -1,6 +1,6 @@
 package de.craftsblock.testbot.listeners;
 
-import de.craftsarmy.craftscore.core.Core;
+import de.craftsblock.craftscore.core.Core;
 import de.craftsblock.testbot.Main;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;

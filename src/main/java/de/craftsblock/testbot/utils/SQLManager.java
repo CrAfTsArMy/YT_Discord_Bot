@@ -1,6 +1,6 @@
 package de.craftsblock.testbot.utils;
 
-import de.craftsarmy.craftscore.core.Core;
+import de.craftsblock.craftscore.core.Core;
 import de.craftsblock.testbot.secret.DoNotOpen;
 
 public class SQLManager {

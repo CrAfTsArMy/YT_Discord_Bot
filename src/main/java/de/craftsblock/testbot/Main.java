@@ -1,8 +1,6 @@
 package de.craftsblock.testbot;
 
-import de.craftsarmy.craftscore.core.Core;
-import de.craftsblock.testbot.commands.TestCommand;
-import de.craftsblock.testbot.interactions.InteractionManager;
+import de.craftsblock.craftscore.core.Core;
 import de.craftsblock.testbot.interactions.InteractionRegistry;
 import de.craftsblock.testbot.listeners.InteractionListener;
 import de.craftsblock.testbot.listeners.JoinLeaveListener;
@@ -13,7 +11,6 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
 import java.util.Arrays;
@@ -29,6 +26,7 @@ public class Main extends InteractionRegistry {
      */
     public static void main(String[] args) throws InterruptedException {
         Core.instance().init();
+        Core.instance().enableSQL();
         new SQLManager();
         JDABuilder builder = JDABuilder.create(DoNotOpen.TOKEN, Arrays.asList(GatewayIntent.values()));
         builder.setEnableShutdownHook(true);
